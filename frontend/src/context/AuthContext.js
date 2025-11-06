@@ -42,7 +42,7 @@ export const AuthProvider = ({ children }) => {
       setError(null);
       return response.data;
     } catch (err) {
-      setError(err.response?.data?.message || 'Registration failed');
+      setError(err.response?.data?.message || 'Registration not done properly');
       throw err;
     }
   };
